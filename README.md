@@ -21,6 +21,20 @@ Claude Code镜像服务，可自部署的代理服务。
 
 📖 **免责声明**: 本项目仅供技术学习和研究使用，作者不对因使用本项目导致的账户封禁、服务中断或其他损失承担任何责任。
 
+## 🎯 替代方案
+
+如果您不想自己搭建，也可以选择我们提供的服务：
+
+### 🛠️ Flapcode - 基于 Reclaude-code 的在线服务
+
+专为不便自建但需要使用 Claude Code 的用户打造的一站式解决方案。
+
+**核心优势：**
+- 🌐 **国内直连**：无需科学上网，即可极速访问 Claude Code 完整功能
+- 🤝 **全站 Max 账号**：享受完整的模型体验，无需担心使用限制
+- 💰 **计费简单透明**：采用与官方 API 相同的计费标准，每日更新使用额度
+- 🔒 **安全可靠**：专业运维团队保障服务稳定性，让您专注于开发本身
+
 ## 快速开始
 
 ### Docker 运行
@@ -97,7 +111,7 @@ curl -X POST http://localhost:4567/v1/auth/token \
   "env": {
     "DISABLE_TELEMETRY": "1",
     "ANTHROPIC_BASE_URL": "http://localhost:4567",
-    "CLAUDE_CODE_OAUTH_TOKEN": "your-reclaude-token"
+    "ANTHROPIC_AUTH_TOKEN": "your-reclaude-token"
   }
 }
 ```
